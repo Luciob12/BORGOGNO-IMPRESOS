@@ -21,7 +21,7 @@ body{
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "nav    nav    nav    nav"
                          "header header header header"
-                         "main   main   main  aside"
+                         "main   main   main   aside"
                          "footer footer footer footer";
 }
 
@@ -35,6 +35,14 @@ body{
                              "footer footer footer footer";
     }
 }
+
+/* GRID SOBRE NOSOTROS */
+
+
+
+
+
+
 
 /* NAVEGADOR */
 
@@ -103,11 +111,11 @@ body{
         left: -300px;
         flex-direction: column;
         justify-content: start;
-        padding-top: 20px;
         padding-left: 10px;
+        padding: 10% 0% 0% 5% ;
         background-color: black;
         width: 250px;
-        height: 100vh;
+        height: 100%;
         transition: 0.2s;
     }
     .navegador .fa-bars:hover + ul{
@@ -117,15 +125,6 @@ body{
         left: 0;
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 /* HEADER */
@@ -161,7 +160,6 @@ body{
     color: rgb(0, 0, 0);
     font-size: 18px;
 }
-
 .trabajosRealizados > img{
     width: 380px;
     height: 400px;
@@ -183,16 +181,12 @@ body{
         padding: 0px 5px 0px 5px
     }
 }
+
 /* ASIDE */ 
 
 .gridAside{
     grid-area: aside;
 }
-
-
-
-
-
 
 /* PIE PAGINA*/
 
@@ -245,9 +239,19 @@ body{
     }
     
 }
+
+/* PIE PAGINA CELULAR */
+
 @media(max-width:576px){
     .logoFooter img{
         animation: none;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+    .letraPiePagina h5{
+        font-size: 8px;
     }
 }
 
@@ -270,10 +274,28 @@ body{
     padding: 15px 0px 30px;
 }
 .informacionContacto .horarios{
-    padding: 300px 0px 0px;
+    padding: 250px 0px 0px;
 }
-h2{
-    text-align: center;
+
+
+/* PAG CONTACTO CELULAR */
+
+@media(max-width:576px){
+    .mapaUbicacion{
+        display: flex;
+        justify-content: center;
+    }
+    .dondeEstamos{
+        text-align: center;
+    }
+    .informacionContacto{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        text-align: center;
+    }
+
 }
 
 /* PAG PREGUNTAS FRECUENTES */
@@ -290,7 +312,9 @@ h2{
 .pregunta{
     font-weight: bold;
 }
+
 /* CELULAR PREGUNTAS FRECUENTES */
+
 @media(max-width:576px){ 
     .preguntasFrecuentes{
         padding: 0px 10px 20px 0px;
@@ -305,6 +329,7 @@ h2{
 }
 
 /* LOADING */
+
 .loading{
     width: 100vw;
     height: 100vh;
@@ -331,3 +356,9 @@ h2{
     }
     
 }
+
+/* PAGINA SOBRE NOSOTROS */
+.sliderSobreNosotros{
+    padding: 40px;
+}
+/* GRID SOBRE NOSOTROS */
