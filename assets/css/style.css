@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: fuenteProyecto;
+    src: url(/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+body{
+    font-family: fuenteProyecto;
+    background-image: url("../img/fondo4.jpg");
+
+}
+
+/* GRID */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 1fr 100px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main  aside"
+                         "footer footer footer footer";
+}
+
+@media(max-width:576px){
+    .grid{
+        grid-template-rows: 100px 100px 1fr 1fr 100px;
+        grid-template-areas: "nav    nav    nav    nav"
+                             "header header header header"
+                             "main   main   main   main  "
+                             "aside  aside  aside  aside "
+                             "footer footer footer footer";
+    }
+}
+
+@media(max-width:576px){
+    .navegador .fa-bars {
+        display: block;
+        color: white;
+        font-size: 24px;
+    }
+    .navegador ul{
+        display: none;
+    }
+}
+
+/* NAVEGADOR */
+
+.navegador{
+    grid-area: nav;
+    background-color: black;
+    padding: 20px;
+}
+.navegador .fa-bars {
+    display: none;
+    color: white;
+}
+.navegador > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.navegador > ul > li > a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 20px;
+}
+.logo img{
+    width: 210px;
+}
+.tituloInicio {
+    text-align: center;
+    padding: 20px;
+}
+.tituloContacto{
+    text-align: center;
+    padding: 20px;
+}
+.tituloPreguntas{
+    text-align: center;
+    padding: 20px;
+}
+.tituloQuienes{
+    text-align: center;
+    padding: 20px;
+}
+.tituloServicios{
+    text-align: center;
+    padding: 20px;
+}
+.navegador > ul > li :hover{
+    background-color: #444343d8;
+    border-radius: 25px;
+}
+/* NAVEGADOR CELULAR */
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+.gridHeader{
+    grid-area: header;
+}
+
+/* MAIN */
+
+.gridMain{
+    grid-area: main;
+}
+.inicio{
+    display: flex;
+    justify-content: space-between;
+    grid-area: main ;
+}
+.queHacemos{
+    margin: 15px;
+    width: 450px;
+    padding: 15px;
+}
+.queHacemos > h2{
+    text-align: center;
+}
+.letraQueHacemos1{
+    padding: 20px 0px 0px 50px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.letraQueHacemos2{
+    padding: 0px 0px 45px 50px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.trabajosRealizados{
+    grid-area: main;
+}
+.trabajosRealizados > img{
+    width: 450px;
+    height: 400px;
+    padding: 50px 100px 20px 0px;
+}
+
+/* ASIDE */ 
+
+.gridAside{
+    grid-area: aside;
+}
+
+
+
+
+
+
+/* PIE PAGINA*/
+
+.gridFooter{
+    grid-area: footer;
+}
+.logoInstagram{
+    padding: 5px 5px 5px;
+    width: 40px;
+}
+.logoFacebook{
+    width: 40px; 
+    padding: 5px 5px 5px;
+}
+.piePagina{
+    height: 130px;
+    background-color: #444343d8;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 30px;
+}
+.letraPiePagina{
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 4px 0px;
+    color: #000;
+}
+.logoFooter img{
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+}
+@keyframes logo {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(200px,0px)
+    }
+    
+}
+
+
+ /* PAG CONTACTO */
+
+ .contacto{
+    display: flex;
+    justify-content: space-around;
+
+}
+.informacionContacto{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 0px 0px;
+}
+.informacionContacto p{
+    line-height: 30px;
+}
+.mapaUbicacion{
+    padding: 15px 0px 30px;
+}
+.informacionContacto .horarios{
+    padding: 300px 0px 0px;
+}
+h2{
+    text-align: center;
+}
+
+/* PAG PREGUNTAS FRECUENTES*/
+
+.preguntasFrecuentes{
+    padding: 20px 0px 30px 70px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    
+}
+.respuesta{
+    padding: 5px 0px 5px 20px;
+}
+.pregunta{
+    font-weight: bold;
+}
+
+/* LOADING */
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.911);
+    position: fixed;
+    z-index: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading > i{
+    color: aliceblue;
+    font-size: 40px;
+    animation-name: rotar ;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotar {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+    }
+    
+}
