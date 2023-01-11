@@ -9,82 +9,171 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <div class="grid">
-    <div class="loading">
-        <i class="fa-solid fa-spinner"></i>
-    </div>
-    <nav class="navegador">
-        <i class="fa-solid fa-bars"></i>
-        <ul>
-            <div class="logo">
-                <img src="../assets/img/LOGO BIMPRESOS RECTANGULAR-min.png" alt="">
-            </div>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-            <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-        </ul>
-    </nav>
-
-    <header class="gridHeader">
-        <h1 class="tituloPreguntas">Preguntas Frecuentes</h1>
-    </header>
-
-    <main class="gridMain">
-        <div class="preguntasFrecuentes">
-            <p class="pregunta">¿Cuál es el horario de atención al cliente?</p>
-            <p class="respuesta">Nuestro horario de atención es:</p> 
-            <p class="respuesta"> De lunes a vierdes de 8 a 12 y de 16 a 19hs.</p>
-            <p class="pregunta">¿Cómo puedo ponerme en contacto con BORGOGNO IMPRESOS?</p>
-            <p class="respuesta">Para cualquier duda nos puedes escribir al mail borgognoimpresos@gmail.com</p>
-            <p class="respuesta">Nos podes llamar al teléfono 3493 463470 </p>
-            <p class="respuesta">Nos podes llamar al teléfono fijo 452722 </p>
-            <p class="respuesta">Nos podes enviar un whatsapp al 3493 463470</p>
-            <p class="respuesta">Podes venir a nuestro local ubicado en Mitre 171, Sunchales, Santa Fe.</p>
-            <p class="pregunta">¿Cuáles son los gastos de envío?</p>
-            <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, suscipit eos!</p>
-            <p class="pregunta">¿Puedo cambiar la dirección de entrega posteriormente?</p>
-            <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, suscipit eos!</p>
-            <p class="pregunta">¿Puedo recoger mi pedido en la empresa?</p>
-            <p class="respuesta">Si, dentro del horario de atención al público.</p>
-            <p class="pregunta">¿Qué tipos de papel utilizamos?</p>
-            <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, suscipit eos!</p>
-            <p class="pregunta">¿Cuáles son las formas de pago?</p>
-            <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, suscipit eos!</p>
-            <p class="pregunta">¿Qué tamaño de página puedo usar?</p>
-            <p class="respuesta">En la web, dispone de los tamaños más utilizados para libros, revistas, folleto, flyer, etc.. La primera medida siempre indica el ancho y la segunda el alto. Si usted necesita un tamaño diferente a los standard de la web, sólo tiene que escoger el inmediatamente superior que más se parezca, por ejemplo: el tamaño de tu libro es 160 x 220 mm., este tamaño supera al estándar de 148 x 210 mm., pero no llega al 170 x 240 mm. que es el inmediato superior, por lo tanto elegiremos este último, 170 x 240 mm. En este caso deberá indicárnoslo y enviarnos el documento al que usted desee la impresión.</p>
-            <p class="pregunta">¿Cuánto tiempo tardare en recibir mi pedido?</p>
-            <p class="respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, suscipit eos!</p>
-            <p class="pregunta">¿Cómo hacer el pedido?</p>
-            <p class="respuesta">Las formas de hacer el pedido son varias:</p>
-            <p class="respuesta"> Mediante nuestro whatsapp 3493 463470</p>
-            <p class="respuesta"> Mediante nuestro fijo 452722</p>
-            <p class="respuesta"> Mandandonos un mail al siguiente correo borgognoimpresos@gmail.com</p>
-            <p class="respuesta"> Directamente en la instalacion Mitre 171</p>
-        </div>
-    </main>
-    <aside>
-
-    </aside>
-    <footer class="gridFooter">
-        <div class="piePagina"> 
-            
-            <div class="logoFooter">
-                <img src="../assets/img/LOGO REDONDO-min.png" alt="">
-            </div>
-            <div class="letraPiePagina">
-                <h5>© Copyright 2022 BORGOGNOIMPRESOS | Todos los derechos reservados</h5>
-            </div>
-            <div class="redes">
+    <div class="gridAcordeon">
+      <div class="loading">
+          <i class="fa-solid fa-spinner"></i>
+      </div>
+      <nav class="navegador">
+          <i class="fa-solid fa-bars"></i>
+          <ul>
+              <div class="logo">
+                  <img src="../assets/img/LOGO BIMPRESOS RECTANGULAR-min.png" alt="">
+              </div>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
+              <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+              <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+              <li><a href="./servicios.html">Servicios</a></li>
+          </ul>
+      </nav>
+  
+      <header class="gridHeader">
+          <h1 class="tituloPreguntas">Preguntas Frecuentes</h1>
+      </header>
+  
+      <main class="gridMain">
+          <div class="contenedor-acordeon">
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                  <label for="btn-acordeon1">
+                      <p>¿Cuál es el horario de atención al cliente?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Nuestro horario de atención al cliente es de lunes a vierdes de 8hs a 12hs y de 16hs a 19hs.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                  <label for="btn-acordeon2">
+                      <p>¿Cómo puedo ponerme en contacto con ustedes?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <div class="wppAcordeon">
+                          <a href="https://api.whatsapp.com/send?phone=%2B543493463470&text=" target="_blank"><img src="../assets/img/whatsapp.png" alt="" class="logoWhatsapp"></a>
+                          <a href="https://www.instagram.com/borgognoimpresos/" target="_blank"><img src="../assets/img/instagram-min.png" alt="" class="logoInstagram"></a>
+                          <a href="https://www.facebook.com/profile.php?id=100063749460341" target="_blank"><img src="../assets/img/facebook.png" alt="" class="logoFacebook"></a>
+                          <a href="mailto:borgognoimpresos@gmail.com" target="_blank"><img src="../assets/img/gmail.png" alt="" class="logoCorreo"></a>
+                        </div>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                  <label for="btn-acordeon3">
+                      <p>¿Puedo recoger mi pedido en la empresa?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Si, en nuestros horarios de atención al cliente podes encontrarnos en Mitri 72 - Sunchales / Sta Fe .</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                  <label for="btn-acordeon4">
+                      <p>¿Qué tipos de papel utilizamos?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+                  <label for="btn-acordeon5">
+                      <p>¿Cuáles son las formas de pago?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+                  <label for="btn-acordeon6">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon7" class="btn-acordeon">
+                  <label for="btn-acordeon7">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon8" class="btn-acordeon">
+                  <label for="btn-acordeon8">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon9" class="btn-acordeon">
+                  <label for="btn-acordeon9">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon10" class="btn-acordeon">
+                  <label for="btn-acordeon10">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon11" class="btn-acordeon">
+                  <label for="btn-acordeon11">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+              <div class="acordeon">
+                  <input type="radio" name="acordeon" id="btn-acordeon12" class="btn-acordeon">
+                  <label for="btn-acordeon12">
+                      <p>¿Lorem ipsum dolor sit amet.?</p>
+                  </label>
+                  <div class="contenido-acordeon">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quaerat nobis, quidem similique assumenda qui libero harum est repellat quibusdam.</p>
+                  </div>
+              </div>
+          </div>
+      </main>
+  
+      <aside>
+      </aside>
+  
+      <footer class="gridFooter">
+          <div class="piePagina"> 
+              <div class="logoFooter">
+                  <img src="../assets/img/LOGO REDONDO-min.png" alt="">
+              </div>
+              <div class="letraPiePagina">
+                  <h5>© Copyright 2022 BORGOGNOIMPRESOS | Todos los derechos reservados</h5>
+              </div>
+              <div class="redes">
+                <a href="mailto:borgognoimpresos@gmail.com" target="_blank"><img src="../assets/img/gmail.png" alt="" class="logoCorreo"></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B543493463470&text=" target="_blank"><img src="../assets/img/whatsapp.png" alt="" class="logoWhatsapp"></a>
                 <a href="https://www.instagram.com/borgognoimpresos/" target="_blank"><img src="../assets/img/instagram-min.png" alt="" class="logoInstagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=100063749460341" target="_blank"><img src="../assets/img/facebook-min.png" alt="" class="logoFacebook"></a>
-            </div>
-            
-        </div>
-    </footer>
-    <script src="../assets/js/main.js"></script>
-  </div>
-</body>
+                <a href="https://www.facebook.com/profile.php?id=100063749460341" target="_blank"><img src="../assets/img/facebook.png" alt="" class="logoFacebook"></a>
+              </div>
+          </div>
+      </footer>
+  
+      <script src="../assets/js/main.js"></script>
+  
+    </div>
+  
+  </body>
+  
 </html>
 

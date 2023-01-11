@@ -41,44 +41,6 @@ body{
 
 /* GRID SERVICIOS */
 
-
-/* SLIDER INICIO */
-
-.sliderInicio{
-    width: 500px;
-    height: 700px;
-    margin: auto;
-    overflow: hidden;
-}
-.sliderInicio ul{
-    display: flex;
-    width: 400%;
-    padding: 0;
-    animation: cambio 20s infinite;
-    animation-direction: alternate;
-}
-.sliderInicio ul li{
-    width: 100%;
-    list-style: none;
-}
-.sliderInicio img{
-    width: 100%;
-}
-@keyframes cambio {
-    0% { margin-left: 0;}
-    20% { margin-left: 0;}
-
-    25% { margin-left: -100%;}
-    45% { margin-left: -100%;}
-
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
-
-    75% { margin-left: -300%;}
-    100% { margin-left: -300%;}
-}
-
-
 /* NAVEGADOR */
 
 .navegador{
@@ -173,6 +135,9 @@ body{
 .gridMain{
     grid-area: main;
 }
+
+/* INICIO */
+
 .inicio{
     display: flex;
     justify-content: space-between;
@@ -180,7 +145,7 @@ body{
 .queHacemos{
     margin: 15px;
     width: 500px;
-    padding: 15px;
+    padding: 30px 10px 10px 10px;
 }
 .queHacemos > h2{
     text-align: center;
@@ -198,8 +163,49 @@ body{
 .trabajosRealizados > img{
     width: 380px;
     height: 400px;
-    padding: 50px 0px 20px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
+.sliderInicio{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 8px;
+}
+.sliderInicio ul{
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+.sliderInicio ul li{
+    width: 100%;
+    list-style: none;
+}
+.sliderInicio img{
+    width: 100%;
+}
+.trabajosRealizados{
+    padding: 0px 0px 60px 0px;
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+
+/* INICIO CELULAR */
+
 @media(max-width:576px){
     .inicio{
         display: flex;
@@ -216,6 +222,39 @@ body{
         padding: 0px 5px 0px 5px
     }
 }
+
+/* INICIO MONITOR ESCRITORIO */
+
+@media(min-width:1800px){
+    .inicio{
+        display: flex;
+        justify-content: center;
+    }
+    .trabajosRealizados{
+        padding-top: 60px;
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .queHacemos{
+        width: 600px;
+        padding: 80px 10px 10px 10px;
+    }
+    .queHacemos h2{
+        font-size: 30px;
+        padding: 10px 5px 0px 5px
+    }
+    .queHacemos p{
+        font-size: 25px;
+        padding: 10px 5px 0px 5px
+    }
+    .sliderInicio{
+        width: 500px;
+    }
+
+}
+
 
 /* ASIDE */ 
 
@@ -236,6 +275,14 @@ body{
     width: 40px; 
     padding: 5px 5px 5px;
 }
+.logoCorreo{
+    width: 40px; 
+    padding: 5px 5px 5px;
+}
+.logoWhatsapp{
+    width: 40px; 
+    padding: 5px 5px 5px;
+}
 .piePagina{
     height: 130px;
     background-color: #444343d8;
@@ -245,10 +292,7 @@ body{
     bottom: 0;
     width: 100%;
 }
-
 .redes{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 20px 20px 30px;
 }
@@ -282,15 +326,20 @@ body{
 /* PIE PAGINA CELULAR */
 
 @media(max-width:576px){
+    .letraPiePagina h5{
+        font-size: x-small;
+    }
+    .letraPiePagina{
+        width: 300px;
+    }
     .logoFooter img{
         animation: none;
         width: 90px;
         height: 90px;
-        display: flex;
-        align-items: center;
     }
-    .letraPiePagina h5{
-        font-size: 7px;
+    .redes{
+        display: flex;
+        align-items: flex-start;
     }
 }
 @media(max-width:872px){
@@ -299,40 +348,14 @@ body{
         display: flex;
         align-items: center;
     }
-    .letraPiePagina h5{
-        font-size: 15px;
-    }
 }
 
-/* PAG CONTACTO MONITOR ESCRITORIO*/
-
-@media(min-width:1800px){
-    .informacionContacto{
-        font-size: 22px;
-    }
-}
-
-/* PAG CONTACTO CELULAR */
-
-@media(max-width:576px){
-    .informacionContacto{
-        padding: 0px;
-    }
-}
 
  /* PAG CONTACTO */
 
 .contacto{
-    height: 600px;
+    height: 700px;
     padding-left: 100px
-}
-.informacionContacto{
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0px 0px 0px;
-}
-.informacionContacto p{
-    line-height: 30px;
 }
 .mapaUbicacion{
     padding: 15px 0px 20px;
@@ -340,6 +363,9 @@ body{
 .horarios{
     font-size: 20px;
     padding: 200px 0px 0px;
+}
+.ubicacion h2{
+    text-align: center;
 }
 .wpp{
     padding: 50px 0px 0px 0px;
@@ -349,6 +375,17 @@ body{
     width: 150px;
 }
 
+/* PAG CONTACTO MONITOR ESCRITORIO*/
+
+@media(min-width:1800px){
+    .contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
+
 /* PAG CONTACTO CELULAR */
 
 @media(max-width:576px){
@@ -356,56 +393,18 @@ body{
         display: flex;
         justify-content: center;
     }
-    .dondeEstamos{
-        text-align: center;
-    }
-    .informacionContacto{
+    .wpp{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        padding-left: 130px;
+        
     }
-    h2{
-        text-align: center;
-    }
-
-}
-
-/* PAG PREGUNTAS FRECUENTES MONITOS ESCRITORIO*/
-
-@media(min-width:1800px){
-    .preguntasFrecuentes{
-        font-size: 20px;
+    .wpp img{
+        padding: 40px;
+        width: 140px;
     }
 }
 
-/* PAG PREGUNTAS FRECUENTES */
-
-.preguntasFrecuentes{
-    padding: 20px 0px 30px 70px;
-    line-height: 30px;
-    color: rgb(0, 0, 0);
-    
-}
-.respuesta{
-    padding: 5px 0px 5px 20px;
-}
-.pregunta{
-    font-weight: bold;
-}
-
-/* CELULAR PREGUNTAS FRECUENTES */
-
-@media(max-width:576px){ 
-    .preguntasFrecuentes{
-        padding: 0px 10px 20px 0px;
-
-    }
-    .respuesta{
-        padding: 0px 10px 0px 50px;
-    }
-    .pregunta{
-        padding: 0px 10px 0px 50px;
-    }
-}
 
 /* LOADING */
 
@@ -471,18 +470,13 @@ body{
     75% { margin-left: -300%;}
     100% { margin-left: -300%;}
 }
-
 .sobreNosotros{
     padding: 5%;
 
 }
-/* SERVICIOS CELULAR */
 
-@media(max-width:576px){
-    .container{
-        flex-wrap: wrap;
-    }
-}
+
+
 /* SERVICIOS*/
 
 .container{
@@ -512,4 +506,89 @@ body{
 .card .contenido{
     padding: 15px;
     text-align: center;
+}
+
+/* SERVICIOS CELULAR */
+
+@media(max-width:576px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+/* PREG FRECUENTES */
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+} 
+.contenedor-acordeon p{
+    text-align: center;
+} 
+.acordeon{
+    background-color: rgba(255, 255, 255, 0.267);
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background-color: #2e2e2e;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+.wppAcordeon{
+    display: flex;
+    justify-content: center;
+}
+.wppAcordeon img{
+    width: 70px;
+    padding: 10px;
+}
+
+/* PREG FRECUENTES CELULAR */
+
+@media screen and (max-width:900px){
+    .contenedor-acordeon{
+        width: 90%;
+    }
+    .acordeon label{
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+}
+
+/* PAG PREGUNTAS FRECUENTES MONITOS ESCRITORIO*/
+
+@media(min-width:1800px){
+    .preguntasFrecuentes{
+        font-size: 20px;
+    }
 }
