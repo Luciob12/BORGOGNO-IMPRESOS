@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navegador {
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.navegador > fa-bars {
+  display: none;
+  color: white;
+}
+.navegador > fa-bars > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navegador > fa-bars > ul > li:hover {
+  background-color: rgba(68, 67, 67, 0.8470588235);
+  border-radius: 25px;
+}
+.navegador > fa-bars > ul > li:hover > a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 20px;
+}
