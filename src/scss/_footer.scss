@@ -1,0 +1,48 @@
+.piePagina {
+	height: 130px;
+	background-color: $background-color_2;
+	display: flex;
+	color: $color_1;
+	justify-content: space-between;
+	bottom: 0;
+	width: 100%;
+}
+.redes {
+	align-items: center;
+	padding: 20px 20px 30px;
+}
+.letraPiePagina {
+	font-size: 20px;
+	display: flex;
+	align-items: flex-end;
+	padding: 0px 0px 4px 0px;
+	color: $color_3;
+}
+.logoFooter {
+	img {
+		width: 130px;
+		height: 130px;
+		display: flex;
+		justify-content: center;
+		animation-name: logo;
+		animation-duration: 3s;
+		animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		animation-iteration-count: infinite;
+	}
+}
+.logoInstagram {
+	padding: 5px 5px 5px;
+	width: 40px;
+}
+.logoFacebook {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+.logoCorreo {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+.logoWhatsapp {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
