@@ -1,0 +1,31 @@
+.navegador {
+	grid-area: nav;
+	background-color: $background-color_1;
+	padding: 20px;
+	.fa-bars {
+		display: none;
+		color: $color_1;
+	}
+	>ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		>li {
+			>a {
+				text-decoration: none;
+				display: block;
+				color: $color_1;
+				padding: 20px;
+			}
+			&:hover {
+				background-color: $background-color_2;
+				border-radius: 25px;
+			}
+		}
+	}
+}
+.logo {
+	img {
+		width: 210px;
+	}
+}
