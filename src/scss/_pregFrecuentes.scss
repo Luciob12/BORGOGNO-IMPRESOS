@@ -2,7 +2,7 @@
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 25px;
 	margin-bottom: 50px;
 	h2 {
 		text-align: center;
@@ -16,6 +16,7 @@
 .acordeon {
 	background-color: $background-color_5;
 	label {
+		border-radius: 7px;
 		display: block;
 		padding: 20px;
 		font-size: 20px;

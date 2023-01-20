@@ -26,6 +26,7 @@
 		.fa-bars {
 			display: block;
 			font-size: 30px;
+			color: $color_1;
 			&:hover {
 				+ {
 					ul {
@@ -164,3 +165,49 @@
 		}
 	}
 }
+
+  /* PIE PAGINA CELULAR */
+  @media (max-width: 576px) {
+    .letraPiePagina h5 {
+      font-size: x-small;
+    }
+    .letraPiePagina {
+      width: 300px;
+    }
+    .logoFooter img {
+      -webkit-animation: none;
+              animation: none;
+      width: 90px;
+      height: 90px;
+    }
+    .redes {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 872px) {
+    .logoFooter img {
+      -webkit-animation: none;
+              animation: none;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @-webkit-keyframes logo {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 0px);
+    }
+  }
+  
+  @keyframes logo {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 0px);
+    }
+  }
