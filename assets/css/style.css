@@ -739,7 +739,7 @@ body {
   }
   .navegador .fa-bars {
     display: block;
-    font-size: 50px;
+    font-size: 35px;
     color: white;
   }
   .navegador .fa-bars:hover + ul {
@@ -823,7 +823,12 @@ body {
     font-size: 0px;
   }
   .cartel img {
-    width: 400px;
+    width: 300px;
+  }
+  .contenedor-acordeon {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 @media (min-width: 1800px) {
